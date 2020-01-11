@@ -1,41 +1,44 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  void test() {
-    print("the button is pressed");
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'netninjapp',
+      title: "Ninja app",
       home: Scaffold(
         appBar: AppBar(
-          title: Text('NinjApp'),
-          backgroundColor: Colors.blue[900],
+          title: Text('My Ninja App'),
           centerTitle: true,
+          elevation: 10,
         ),
         body: Center(
-          child: IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.face,
-              size: 50,
+          child: Container(
+            color: Colors.green[200],
+            child: Text(
+              "Halo Mas! \nketemu lagi :)",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 40,
+              ),
             ),
+            padding: EdgeInsets.all(20),
+            height: 200,
+            width: 300,
           ),
         ),
         floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.green[800],
+          onPressed: () {},
           child: Icon(
-            Icons.favorite,
-            size: 40,
-            color: Colors.yellow,
+            Icons.face,
+            size: 50,
           ),
-          backgroundColor: Colors.red[900],
-          onPressed: () => {},
         ),
+      ),
+      theme: ThemeData(
+        primaryColor: Colors.green[800],
       ),
     );
   }
