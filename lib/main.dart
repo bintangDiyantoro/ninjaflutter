@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          child: FlatButton(
+          child: RaisedButton(
             // child: FlatButton(
             onPressed: () {},
             child: Text(
