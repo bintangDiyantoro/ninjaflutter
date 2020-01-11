@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          child: Image.asset('assets/P_20170319_135612.jpg'),
+          child: Image.network('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixlib=rb-1.2.1&w=1000&q=80'),
         ),
         floatingActionButton: FloatingActionButton(
           child: Icon(
