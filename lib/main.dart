@@ -19,16 +19,12 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          child: RaisedButton.icon(
-            label: Text(
-              "Tekan aku mas",
-              style: TextStyle(fontSize: 20),
-            ),
+          child: IconButton(
+            onPressed: () {},
             icon: Icon(
               Icons.face,
               size: 50,
             ),
-            onPressed: () {},
           ),
         ),
         floatingActionButton: FloatingActionButton(
