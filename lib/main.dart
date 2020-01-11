@@ -16,15 +16,24 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Container(
             color: Colors.green[200],
-            child: Text(
-              "Halo Mas! \nketemu lagi :)",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 40,
-              ),
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "Halo Mas! \nketemu lagi kita :)",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 40,
+                  ),
+                ),
+                RaisedButton.icon(
+                  onPressed: () {},
+                  label: Text("Tekan aku mas"),
+                  icon: Icon(Icons.face),
+                )
+              ],
             ),
             padding: EdgeInsets.all(20),
-            height: 200,
+            height: 230,
             width: 300,
           ),
         ),
