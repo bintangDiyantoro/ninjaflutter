@@ -19,7 +19,15 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          child: Image.network('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixlib=rb-1.2.1&w=1000&q=80'),
+          child: FlatButton(
+            // child: FlatButton(
+            onPressed: () {},
+            child: Text(
+              "Tekan aku mas",
+              style: TextStyle(fontSize: 20, color: Colors.white),
+            ),
+            color: Colors.green,
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           child: Icon(
