@@ -19,10 +19,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          child: Text(
-            'Welcome',
-            style: TextStyle(fontFamily: 'Acme', fontSize: 30),
-          ),
+          child: Image.asset('assets/P_20170319_135612.jpg'),
         ),
         floatingActionButton: FloatingActionButton(
           child: Icon(
