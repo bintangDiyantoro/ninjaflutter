@@ -13,73 +13,47 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           elevation: 10,
         ),
-        body: Center(
-            child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        body: Row(
           children: <Widget>[
-            Container(
-              color: Colors.green[200],
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Text(
-                    "Halo Mas! \nketemu lagi kita :)",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 40,
-                    ),
-                  ),
-                  RaisedButton.icon(
-                    onPressed: () {},
-                    label: Text("Tekan aku mas"),
-                    icon: Icon(Icons.face),
-                  )
-                ],
-              ),
-              // padding: EdgeInsets.all(20),
-              height: 230,
-              width: 300,
+            Expanded(
+              child: Image.asset('assets/P_20170319_135612.jpg'),
+              flex: 2,
             ),
-            Container(
-              color: Colors.green[200],
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Container(
-                    child: Text(
-                      "1",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    padding: EdgeInsets.all(20),
-                    color: Colors.blueGrey,
-                  ),
-                  Container(
-                    child: Text(
-                      "2",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    padding: EdgeInsets.all(20),
-                    color: Colors.black45,
-                  ),
-                  Container(
-                    child: Text(
-                      "3",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    padding: EdgeInsets.all(20),
-                    color: Colors.deepPurple,
-                  ),
-                ],
+            Expanded(
+              flex: 4,
+              child: Container(
+                child: Text(
+                  '1',
+                  textAlign: TextAlign.center,
+                ),
+                padding: EdgeInsets.all(30),
+                color: Colors.greenAccent,
               ),
-              // padding: EdgeInsets.all(20),
-              height: 230,
-              width: 300,
+            ),
+            Expanded(
+              flex: 3,
+              child: Container(
+                child: Text(
+                  '2',
+                  textAlign: TextAlign.center,
+                ),
+                padding: EdgeInsets.all(30),
+                color: Colors.orangeAccent,
+              ),
+            ),
+            Expanded(
+              flex: 4,
+              child: Container(
+                child: Text(
+                  '3',
+                  textAlign: TextAlign.center,
+                ),
+                padding: EdgeInsets.all(30),
+                color: Colors.blueAccent,
+              ),
             ),
           ],
-        )),
+        ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.green[800],
           onPressed: () {},
