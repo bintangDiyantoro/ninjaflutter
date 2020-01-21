@@ -6,65 +6,101 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Ninja app",
+      title: "Ninja ID app",
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My Ninja App'),
+          title: Text('Ninja ID App'),
           centerTitle: true,
-          elevation: 10,
+          elevation: 0,
         ),
-        body: Row(
-          children: <Widget>[
-            Expanded(
-              child: Image.asset('assets/P_20170319_135612.jpg'),
-              flex: 2,
-            ),
-            Expanded(
-              flex: 4,
-              child: Container(
-                child: Text(
-                  '1',
-                  textAlign: TextAlign.center,
+        body: Center(
+          child: Container(
+            width: 350,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  height: 20,
                 ),
-                padding: EdgeInsets.all(30),
-                color: Colors.greenAccent,
-              ),
-            ),
-            Expanded(
-              flex: 3,
-              child: Container(
-                child: Text(
-                  '2',
-                  textAlign: TextAlign.center,
+                Center(
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage('assets/Najmuddinfix.jpg'),
+                    radius: 40,
+                  ),
                 ),
-                padding: EdgeInsets.all(30),
-                color: Colors.orangeAccent,
-              ),
-            ),
-            Expanded(
-              flex: 4,
-              child: Container(
-                child: Text(
-                  '3',
-                  textAlign: TextAlign.center,
+                Divider(
+                  thickness: 1.5,
+                  color: Colors.green[900],
+                  height: 50,
                 ),
-                padding: EdgeInsets.all(30),
-                color: Colors.blueAccent,
-              ),
+                Text(
+                  'NAME',
+                  style: TextStyle(
+                    letterSpacing: 1.5,
+                    color: Colors.green[900],
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  'Bean',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  'STATUS',
+                  style: TextStyle(
+                    letterSpacing: 1.5,
+                    color: Colors.green[900],
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  'Available',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      color: Colors.green[900],
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      'bean@mail.com',
+                      style: TextStyle(
+                        fontSize: 22,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                )
+              ],
             ),
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.green[800],
-          onPressed: () {},
-          child: Icon(
-            Icons.face,
-            size: 50,
           ),
         ),
+        backgroundColor: Colors.green[800],
       ),
       theme: ThemeData(
-        primaryColor: Colors.green[800],
+        primaryColor: Colors.green[900],
       ),
     );
   }
